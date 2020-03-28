@@ -15,7 +15,6 @@ function processData(input) {
         while (c <= parseInt(input.split('\n')[i]) - a - b) {
           if ((Math.pow(k+1,2))*((8*k)+5) === (Math.pow(b,2))*c) {
             n++;
-            console.log(a,b,c);
             c = parseInt(input.split('\n')[i]);
           }
           else if (Number.isInteger(((Math.pow(k+1,2))*((8*k)+5))/(Math.pow(b,2)))){
