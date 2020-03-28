@@ -15,21 +15,9 @@ function processData(input) {
         while (c <= parseInt(input.split('\n')[i]) - a - b) {
           if(Number.isInteger(((Math.pow(k+1,2))*((8*k)+5))/(Math.pow(b,2))) && (a+b+((Math.pow(k+1,2))*((8*k)+5))/(Math.pow(b,2)) <= parseInt(input.split('\n')[i]))){
             c = ((Math.pow(k+1,2))*((8*k)+5))/(Math.pow(b,2));
-            // if((Math.pow(k+1,2))*((8*k)+5) === (Math.pow(b,2))*c){
               n++;
               c = parseInt(input.split('\n')[i]);
-            // }
-          }
-          // if ((Math.pow(k+1,2))*((8*k)+5) === (Math.pow(b,2))*c) {
-          //   n++;
-          //   c = parseInt(input.split('\n')[i]);
-          // }
-          // else if (Number.isInteger(((Math.pow(k+1,2))*((8*k)+5))/(Math.pow(b,2)))){
-          //   c = ((Math.pow(k+1,2))*((8*k)+5))/(Math.pow(b,2));
-          // }
-          // else{
-          //   c = parseInt(input.split('\n')[i])
-          // }   
+          } 
           else{
             c = parseInt(input.split('\n')[i]);
           }     
@@ -51,4 +39,4 @@ function processData(input) {
   }
 }
 
-processData("2\n8\n10000");
+processData("2\n8\n1000");
